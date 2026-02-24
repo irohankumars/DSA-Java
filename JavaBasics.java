@@ -15,11 +15,18 @@ public class JavaBasics {
 //operating on operators
     // System.out.println(!(1>3));
 //Assignment operators
-        int A = 10;
-        // System.out.println(A+=10);               
-        // System.out.println(A+=10);
-        System.out.println(A *= 10);
-        System.out.println(A /= 10);
+        // int A = 10;
+        // // System.out.println(A+=10);               
+        // // System.out.println(A+=10);
+        // System.out.println(A *= 10);
+        // System.out.println(A /= 10);
+
+        int x, y, z;
+        x = y = z = 2;
+        x += y;
+        y -= z;
+        z /= (x + y);
+        System.out.println(x + " " + y + " " + z);
 
     }
 }
