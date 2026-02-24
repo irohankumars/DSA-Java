@@ -38,40 +38,75 @@ public class JavaBasics {
 
         // }
 
-        // //Income
-        // System.out.println("Enter your Income in lac: ");
-        // int Income = sc.nextInt();
+        //Income
+            // System.out.println("Enter your Income in lac: ");
+            // int Income = sc.nextInt();
 
-        // if(Income <= 50000){
-        //     System.out.println("your tax is 0%" );
-        //     System.out.println("0% tax for the income less than 5 Lac");
-        // }else if(Income >= 50000 && Income <= 1000000){
-        //     double tax = Income * 0.2;
-        //     System.out.println("your tax is 20%= " + tax);
-        // }else{
-        //     double tax = Income * 0.3;
-        //     System.out.println("your tax is 30%= " + tax);
+            // if(Income <= 50000){
+            //     System.out.println("your tax is 0%" );
+            //     System.out.println("0% tax for the income less than 5 Lac");
+            // }else if(Income >= 50000 && Income <= 1000000){
+            //     double tax = Income * 0.2;
+            //     System.out.println("your tax is 20%= " + tax);
+            // }else{
+            //     double tax = Income * 0.3;
+            //     System.out.println("your tax is 30%= " + tax);
 
-        // }
+            // }
 
 
         // Switch
-        int A[] = new int[2];
-        System.out.println("Enter the numbers: ");
-        for(int i=0;i<2;i++){
-            A[i] = sc.nextInt();
-        }
-        System.out.println("Enter the operation to be performed: ");
-        char ch = sc.next().charAt(0);
+            // int A[] = new int[2];
+            // System.out.println("Enter the numbers: ");
+            // for(int i=0;i<2;i++){
+            //     A[i] = sc.nextInt();
+            // }
+            // System.out.println("Enter the operation to be performed: ");
+            // char ch = sc.next().charAt(0);
 
-        switch(ch){
-            case '+' : System.out.println("Calculated: " + (A[0] + A[1]));break;
-            case '*' : System.out.println("Calculated: " + (A[0] * A[1]));break;
-            case '%' : System.out.println("Calculated: " + (A[0] % A[1]));break;
-            case '/' : System.out.println("Calculated: " + (A[0] / A[1]));break;
-            case '-' : System.out.println("Calculated: " + (A[0] - A[1]));break;
-            default: System.out.println("Enter the valid operation");
-        }
+            // switch(ch){
+            //     case '+' : System.out.println("Calculated: " + (A[0] + A[1]));break;
+            //     case '*' : System.out.println("Calculated: " + (A[0] * A[1]));break;
+            //     case '%' : System.out.println("Calculated: " + (A[0] % A[1]));break;
+            //     case '/' : System.out.println("Calculated: " + (A[0] / A[1]));break;
+            //     case '-' : System.out.println("Calculated: " + (A[0] - A[1]));break;
+            //     default: System.out.println("Enter the valid operation");
+            // }
 
+        //loops
+            // for(double i=0; i<=1000000000; i++){
+            //     System.out.println("Hello, World!");
+            //     System.out.println("Hello!");
+
+            // }
+
+            // int num = 0;
+            // while(num <=100){
+            //     System.out.println("hello!");
+            //     num++;
+            // }
+
+            // do{
+            //     System.out.println("Hello!");
+            //     num++;
+            // }while(num<=99);
+
+            System.out.println("Enter the Range of numbers you want sum of: ");
+            int n = sc.nextInt();
+            int sum =0;
+            for ( int i = 0 ; i <=n; i++){
+                 sum += i;
+            }
+                System.out.println( sum );
+
+            // int i = 0;
+            // while(i<=10){
+            //     System.out.println(i);
+            //     i++;
+            // }
+            // do{
+            //     System.out.println(i);
+            //     i ++;
+            // }while(i<=30);
     }
 }
