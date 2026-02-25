@@ -91,13 +91,13 @@ public class JavaBasics {
             //     num++;
             // }while(num<=99);
 
-            System.out.println("Enter the Range of numbers you want sum of: ");
-            int n = sc.nextInt();
-            int sum =0;
-            for ( int i = 0 ; i <=n; i++){
-                 sum += i;
-            }
-                System.out.println( sum );
+            // System.out.println("Enter the Range of numbers you want sum of: ");
+            // int n = sc.nextInt();
+            // int sum =0;
+            // for ( int i = 0 ; i <=n; i++){
+            //      sum += i;
+            // }
+            //     System.out.println( sum );
 
             // int i = 0;
             // while(i<=10){
@@ -108,5 +108,13 @@ public class JavaBasics {
             //     System.out.println(i);
             //     i ++;
             // }while(i<=30);
+
+            // System.out.println("Enter the Range of numbers you want sum of: ");
+            // int n = sc.nextInt();
+            // int sum =0;
+            // for ( int i = 0 ; i <=n; i++){
+            //      sum += i;
+            // }
+            //     System.out.println( sum );
     }
 }
