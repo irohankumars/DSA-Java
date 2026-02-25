@@ -116,5 +116,32 @@ public class JavaBasics {
             //      sum += i;
             // }
             //     System.out.println( sum );
-    }
+    
+        //   //local function
+        //     class hello{
+        //         void Recall(){
+        //             System.out.println("Hello23!");
+        //         }
+
+        //     }
+
+        //Printing Squares
+        for (int line = 1; line<=4 ; line++){
+                for(int star = 1; star<=4; star++){
+                    System.out.print("*");
+                }
+                System.out.println();
+        }
+    
+    for (int line = 1; line <= 4; line++) {
+        for (int star = 1; star <= line; star++) {
+            System.out.print("*");
+        }
+    System.out.println(); // move to next line
+}
+
+    
+    
+    
+        }
 }
