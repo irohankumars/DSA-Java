@@ -144,21 +144,35 @@ public class JavaBasics {
         //     }
 
         //Printing Squares
-        for (int line = 1; line<=4 ; line++){
-                for(int star = 1; star<=4; star++){
-                    System.out.print("*");
-                }
-                System.out.println();
-        }
-    
-    for (int line = 1; line <= 4; line++) {
-        for (int star = 1; star <= line; star++) {
-            System.out.print("*");
-        }
-    System.out.println(); // move to next line
-}
+        //         for (int line = 1; line<=4 ; line++){
+        //                 for(int star = 1; star<=4; star++){
+        //                     System.out.print("*");
+        //                 }
+        //                 System.out.println();
+        //         }
+            
+        //     for (int line = 1; line <= 4; line++) {
+        //         for (int star = 1; star <= line; star++) {
+        //             System.out.print("*");
+        //         }
+        //     System.out.println(); // move to next line
+        // }
+    //print reverse of a numbers ----------- using string builder
+            // System.out.println("Enter the Number that needs to be printed in reverse: ");
+            // String num = sc.next();
 
-    
+            // String reversed = new StringBuilder(num).reverse().toString();
+            // System.out.println(reversed);
+    //printing reverse of a number using arithmetic operators
+                System.out.println("Enter the numbers: ");
+                int num = sc.nextInt();
+                int reverse = 0;
+                while(num != 0){
+                    int digit = num % 10;
+                    num = num / 10;                    
+                    reverse = reverse * 10 + digit;
+                }
+                System.out.println(reverse);
     
     
         }
