@@ -184,19 +184,34 @@ public class JavaBasics {
 
 
 
-                System.out.println("Enter the numbers: ");
-                int num2 = sc.nextInt();
-                while(num2 != 0){
-                    int digit = num % 10;
-                    System.out.print(digit + " ");
-                    num2 /= 10; 
-                }
-    System.out.println("Enter the numbers: ");
-                int num2 = sc.nextInt();
-                while(num2 != 0){
-                    int digit = num % 10;
-                    System.out.print(digit + " ");
-                    num2 /= 10; 
-                }
+                // System.out.println("Enter the numbers: ");
+                // int num2 = sc.nextInt();
+                // while(num2 != 0){
+                //     int digit = num % 10;
+                //     System.out.print(digit + " ");
+                //     num2 /= 10; 
+                // }
+    // System.out.println("Enter the numbers: ");
+    //             int num2 = sc.nextInt();
+    //             while(num2 != 0){
+    //                 int digit = num % 10;
+    //                 System.out.print(digit + " ");
+    //                 num2 /= 10; 
+    //             }
+     // System.out.println("Enter the numbers: ");
+                // int num2 = sc.nextInt();
+                // while(num2 != 0){
+                //     int digit = num % 10;
+                //     System.out.print(digit + " ");
+                //     num2 /= 10; 
+                // }
+    // System.out.println("Enter the numbers: ");
+    //             int num2 = sc.nextInt();
+    //             while(num2 != 0){
+    //                 int digit = num % 10;
+    //                 System.out.print(digit + " ");
+    //                 num2 /= 10; 
+    //             }
         }
+}
 }
