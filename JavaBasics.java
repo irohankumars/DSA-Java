@@ -164,23 +164,23 @@ public class JavaBasics {
             // String reversed = new StringBuilder(num).reverse().toString();
             // System.out.println(reversed);
     //printing reverse of a number using arithmetic operators
-                System.out.println("Enter the numbers: ");
-                int num = sc.nextInt();
-                int reverse = 0;
-                while(num != 0){
-                    int digit = num % 10;
-                    num = num / 10;                    
-                    reverse = reverse * 10 + digit;
-                }
-                System.out.println(reverse);
+                // System.out.println("Enter the numbers: ");
+                // int num = sc.nextInt();
+                // int reverse = 0;
+                // while(num != 0){
+                //     int digit = num % 10;
+                //     num = num / 10;                    
+                //     reverse = reverse * 10 + digit;
+                // }
+                // System.out.println(reverse);
                 
-                //optimized method 
-                System.out.println("Enter the numbers: ");
-                int num2 = sc.nextInt();
-                while(num2 != 0){
-                    int digit = num % 10;
-                    System.out.print(digit + " ");
-                    num2 /= 10; 
+                // //optimized method 
+                // System.out.println("Enter the numbers: ");
+                // int num2 = sc.nextInt();
+                // while(num2 != 0){
+                //     int digit = num % 10;
+                //     System.out.print(digit + " ");
+                //     num2 /= 10; 
 
 
 
@@ -212,6 +212,25 @@ public class JavaBasics {
     //                 System.out.print(digit + " ");
     //                 num2 /= 10; 
     //             }
+
+    // keep entering numbers till users enter multiple of ten
+        while(true){
+            System.out.println("Enter a number: ");
+        int num4 = sc.nextInt();
+           if(num4 % 10 == 0){
+                System.out.println("divisible by 10");
+                continue;
+               
+               
+            }        else{
+                System.out.println(num4);
+            }
         }
-}
-}
+
+    
+
+
+
+        }
+    }
+
