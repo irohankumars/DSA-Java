@@ -291,23 +291,61 @@ public class JavaBasics {
 
     //patterns
         //star triangle
-        for(int i = 0; i<=7; i++){
-            // System.out.println("");
-            for(int j = 0; j<=i;j++){
-                System.out.print("*");
-            }
-             System.out.println("");
-        }
-        //inverted star
-        int n= 7;
-        for(int i = 0; i<=n; i++){
-            for(int j=0; j<= n-i+1; j++){
-                System.out.print("*");
-            }
-            System.out.println();
-        }
-        
+        // for(int i = 0; i<=7; i++){
+        //     // System.out.println("");
+        //     for(int j = 0; j<=i;j++){
+        //         System.out.print("*");
+        //     }
+        //      System.out.println("");
+        // }
+        // //inverted star
+        //     int n= 7;
+        //     for(int i = 0; i<=n; i++){
+        //         for(int j=0; j<= n-i+1; j++){
+        //             System.out.print("*");
+        //         }
+        //         System.out.println();
+        //     }
+   //half pyramid
+        // System.out.print("enter the number: ");
+        // int n = sc.nextInt();
+        //     for(int i = 1; i<=n; i++){
+        //         // System.out.println("");
+        //         for(int j = 1; j<=i;j++){
+        //             System.out.print(j);
+        //         }
+        //         System.out.println("");
+        //     }
+    //character pattern
+        // char ch = 'A';
+        // for(int i =1;i<=6;i++){
+        //     for(int j=1; j<=i;j++){
+        //         System.out.print(ch);
+        //         ch++;
+        //     }
+        //     System.out.println();
+        // }
+        // System.out.println(ch);
 
+    //hollow pattern
+        // int rows = 4;
+        // int col = 5;
+
+        // for(int i=1; i<= rows; i++){
+        //     for(int j=1;j<=col ; j++){
+
+        //         if(i==1 || i == rows || j ==1 || j==col){
+        //             System.out.print("*");
+        //         }else{
+        //             System.out.print(" ");
+        //         }
+
+        //     }
+        //     System.out.println();
+        // }
+
+
+       
         
 
         }
