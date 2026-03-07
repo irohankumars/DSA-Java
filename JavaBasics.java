@@ -248,27 +248,58 @@ public class JavaBasics {
         //     }
         // }
     //taking multiple integers and returning two sums one of even's and other of odd's
-           int even = 0;
-           int odd = 0;
+        //    int even = 0;
+        //    int odd = 0;
 
-           System.out.print("Enter the number of integers: ");
-           int n = sc.nextInt();
+        //    System.out.print("Enter the number of integers: ");
+        //    int n = sc.nextInt();
 
-           System.out.println("Enter the Integers: ");
-           for(int i = 0; i<n ; i++){
-            int num = sc.nextInt();
+        //    System.out.println("Enter the Integers: ");
+        //    for(int i = 0; i<n ; i++){
+        //     int num = sc.nextInt();
 
-            if(num % 2 ==0){
-                even += num;
-            }else{
-                odd += num;
+        //     if(num % 2 ==0){
+        //         even += num;
+        //     }else{
+        //         odd += num;
+        //     }
+        //     }
+
+        //     System.out.println("Sum of Even "+ even);
+        //     System.out.println("Sum of odd "+ odd);
+
+
+    //Factorial of a number
+        // System.out.println("Enter the number you want to find factorial of ");
+        // int num = sc.nextInt();
+        // int fact = 1;
+
+        // for(int i = 1; i<= num; i++){
+        //     fact *= i;
+        // }
+
+        // System.out.println("Factorial of Num: " + fact);
+        
+    //multiplication table of number entered by user
+        // System.out.println("Enter the numer you want to print Multiplication tables: ");
+        // int n = sc.nextInt();
+
+        // for(int i=1; i<=10;i++){
+        //     int prod = i * n;
+        //     System.out.println(n + " * " + i + " = " + prod );
+        // }
+
+    //patterns
+        //star triangle
+        for(int i = 0; i<=4; i++){
+            // System.out.println("");
+            for(int j = 0; j<=i;j++){
+                System.out.print("*");
             }
+             System.out.println("");
         }
 
-            System.out.println("Sum of Even "+ even);
-            System.out.println("Sum of odd "+ odd);
-
-          
+        
 
         
 
