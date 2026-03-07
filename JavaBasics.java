@@ -2,6 +2,11 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 public class JavaBasics {
+    //functions
+     public static void hello(){
+             System.out.println("helloworld");
+        }
+
     public static void main(String args[]){
 
         Scanner sc = new Scanner(System.in);
@@ -344,6 +349,10 @@ public class JavaBasics {
         //     System.out.println();
         // }
 
+    //Functions
+    //    hello();
+    //    hello();
+    //    hello();
 
        
         
