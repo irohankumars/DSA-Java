@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class JavaBasics {
@@ -158,78 +159,118 @@ public class JavaBasics {
         //     System.out.println(); // move to next line
         // }
     //print reverse of a numbers ----------- using string builder
-            // System.out.println("Enter the Number that needs to be printed in reverse: ");
-            // String num = sc.next();
+        // System.out.println("Enter the Number that needs to be printed in reverse: ");
+        // String num = sc.next();
 
-            // String reversed = new StringBuilder(num).reverse().toString();
-            // System.out.println(reversed);
+        // String reversed = new StringBuilder(num).reverse().toString();
+        // System.out.println(reversed);
     //printing reverse of a number using arithmetic operators
-                // System.out.println("Enter the numbers: ");
-                // int num = sc.nextInt();
-                // int reverse = 0;
-                // while(num != 0){
-                //     int digit = num % 10;
-                //     num = num / 10;                    
-                //     reverse = reverse * 10 + digit;
-                // }
-                // System.out.println(reverse);
-                
-                // //optimized method 
-                // System.out.println("Enter the numbers: ");
-                // int num2 = sc.nextInt();
-                // while(num2 != 0){
-                //     int digit = num % 10;
-                //     System.out.print(digit + " ");
-                //     num2 /= 10; 
+        // System.out.println("Enter the numbers: ");
+        // int num = sc.nextInt();
+        // int reverse = 0;
+        // while(num != 0){
+        //     int digit = num % 10;
+        //     num = num / 10;                    
+        //     reverse = reverse * 10 + digit;
+        // }
+        // System.out.println(reverse);
+        
+        // //optimized method 
+        // System.out.println("Enter the numbers: ");
+        // int num2 = sc.nextInt();
+        // while(num2 != 0){
+        //     int digit = num % 10;
+        //     System.out.print(digit + " ");
+        //     num2 /= 10; 
 
 
 
-                // System.out.println("Enter the numbers: ");
-                // int num2 = sc.nextInt();
-                // while(num2 != 0){
-                //     int digit = num % 10;
-                //     System.out.print(digit + " ");
-                //     num2 /= 10; 
-                // }
-    // System.out.println("Enter the numbers: ");
-    //             int num2 = sc.nextInt();
-    //             while(num2 != 0){
-    //                 int digit = num % 10;
-    //                 System.out.print(digit + " ");
-    //                 num2 /= 10; 
-    //             }
-     // System.out.println("Enter the numbers: ");
-                // int num2 = sc.nextInt();
-                // while(num2 != 0){
-                //     int digit = num % 10;
-                //     System.out.print(digit + " ");
-                //     num2 /= 10; 
-                // }
-    // System.out.println("Enter the numbers: ");
-    //             int num2 = sc.nextInt();
-    //             while(num2 != 0){
-    //                 int digit = num % 10;
-    //                 System.out.print(digit + " ");
-    //                 num2 /= 10; 
-    //             }
+        // System.out.println("Enter the numbers: ");
+        // int num2 = sc.nextInt();
+        // while(num2 != 0){
+        //     int digit = num % 10;
+        //     System.out.print(digit + " ");
+        //     num2 /= 10; 
+        // }
+        // System.out.println("Enter the numbers: ");
+        //             int num2 = sc.nextInt();
+        //             while(num2 != 0){
+        //                 int digit = num % 10;
+        //                 System.out.print(digit + " ");
+        //                 num2 /= 10; 
+        //             }
+        // System.out.println("Enter the numbers: ");
+                    // int num2 = sc.nextInt();
+                    // while(num2 != 0){
+                    //     int digit = num % 10;
+                    //     System.out.print(digit + " ");
+                    //     num2 /= 10; 
+                    // }
+        // System.out.println("Enter the numbers: ");
+        //             int num2 = sc.nextInt();
+        //             while(num2 != 0){
+        //                 int digit = num % 10;
+        //                 System.out.print(digit + " ");
+        //                 num2 /= 10; 
+        //             }
 
     // keep entering numbers till users enter multiple of ten
-        while(true){
-            System.out.println("Enter a number: ");
-        int num4 = sc.nextInt();
-           if(num4 % 10 == 0){
-                System.out.println("divisible by 10");
-                continue;
+        // while(true){
+        //     System.out.println("Enter a number: ");
+        // int num4 = sc.nextInt();
+        //    if(num4 % 10 == 0){
+        //         System.out.println("divisible by 10");
+        //         continue;
                
-               
-            }        else{
-                System.out.println(num4);
+        //     }        else{
+        //         System.out.println(num4);
+        //     }
+        // }
+
+    // check if the given number is prime or not
+        // System.out.println("Enter the Number to find out it is prime or not: ");
+        // int n = sc.nextInt();
+        // boolean isPrime = true;
+        // if(n==2){
+        //     System.out.println("n is prime");
+        // }else{
+        //     for(int i = 2; i<= Math.sqrt(n);i++){
+        //         if(n % i == 0){
+        //         isPrime = false;
+        //         break;
+        //         }
+                
+        //     }
+        //     if (isPrime) {
+        //         System.out.println("The given number is prime " + n);
+        //     } else {
+        //         System.out.println("The given number is not a Prime " + n);
+        //     }
+        // }
+    //taking multiple integers and returning two sums one of even's and other of odd's
+           int even = 0;
+           int odd = 0;
+
+           System.out.print("Enter the number of integers: ");
+           int n = sc.nextInt();
+
+           System.out.println("Enter the Integers: ");
+           for(int i = 0; i<n ; i++){
+            int num = sc.nextInt();
+
+            if(num % 2 ==0){
+                even += num;
+            }else{
+                odd += num;
             }
         }
 
-    
+            System.out.println("Sum of Even "+ even);
+            System.out.println("Sum of odd "+ odd);
 
+          
 
+        
 
         }
     }
