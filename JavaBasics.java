@@ -291,14 +291,21 @@ public class JavaBasics {
 
     //patterns
         //star triangle
-        for(int i = 0; i<=4; i++){
+        for(int i = 0; i<=7; i++){
             // System.out.println("");
             for(int j = 0; j<=i;j++){
                 System.out.print("*");
             }
              System.out.println("");
         }
-
+        //inverted star
+        int n= 7;
+        for(int i = 0; i<=n; i++){
+            for(int j=0; j<= n-i+1; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
         
 
         
