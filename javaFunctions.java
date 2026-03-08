@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class javaFunctions {
 
   public static boolean isPrime(int n){
-    boolean isPrime = true;
     if(n==2){
       return true;
     }
