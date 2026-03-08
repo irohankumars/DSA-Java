@@ -34,16 +34,33 @@
 // }
 
 public class javaFunctions {
-
+  //function to return int sum
   public static int mult(int a,int b){
     return a * b;
   }
+  //function to return float sum
   public static float mult(float a,float b){
     return a * b;
   }
+
+  //function to check if the given number is prime or not
+  public static void prime(int n){
+     for(int i=2; i<=n-1; i++){
+      if(n % i == 0){
+         System.out.println("The number is not prime");  
+         break;
+      }else{
+         System.out.println("The number is  prime");
+    }
+
+     }
+       
+    }
+  
   public static void main(String[] args) {
-    System.out.println(mult(11.3f , 3.3f));
-        System.out.println(mult(11 , 3));
+
+  prime(4);
+    
 
   }
 }
