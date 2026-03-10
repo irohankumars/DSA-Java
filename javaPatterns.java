@@ -68,7 +68,6 @@ public class javaPatterns {
     }
 
       public static void triangle01(int n){
-        int num = 1;
         for(int i = 1; i<=n; i++){
             for(int j=1; j<= i;j++){
                 if((i+j) % 2==0){
@@ -111,7 +110,7 @@ public class javaPatterns {
     }
 
 
-    public static void rhombus(int n){
+    public static void solid_rhombus(int n){
 
         for(int i=1; i<=n; i++){
             for(int j =1;j<=n-i; j++){
@@ -123,11 +122,32 @@ public class javaPatterns {
             System.out.println();
         }
     }
+
+    public static void hollow_rhombus(int row, int col){
+        for(int i =1; i<=row; i++){
+            for(int j =1;j<=row-i;j++){
+                    System.out.print(" ");
+            }
+            for(int j=1;j<=col;j++){
+                if(i == 1 || i == row || j == 1 || j == col ){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
  public static void main(String[] args) {
-    
-    // hollowRectangle(4, 20);
+    // hollowRectangle(5,4);
+    // invertHalfPyramid(9);
+    // invertHalfPyramidupsidedown(9);
+    // invertHalfPyramid2(9);
+    // triangle(9);
+    // triangle01(9);
     // butterfly();
-    rhombus(8);
+    // solid_rhombus(8);
+    hollow_rhombus(4, 5);
 
         }
     }
