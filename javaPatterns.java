@@ -210,7 +210,16 @@ public class javaPatterns {
         }
     }
 
-    
+    public static void x(){
+        int n = 5;
+
+      for(int i =1;i<=n;i++){
+        for(int j = 1; j<=n-i;j++){
+            System.out.print(" ");
+        }
+      }
+    }
+
  public static void main(String[] args) {
     // hollowRectangle(5,4);
     // invertHalfPyramid(9);
@@ -222,7 +231,8 @@ public class javaPatterns {
     // solid_rhombus(8);
     // hollow_rhombus(4, 5);
     // daimond2(10);
-    sandGlass();
+    // sandGlass();
+    x();
 
         }
     }
