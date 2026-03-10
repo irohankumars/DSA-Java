@@ -167,25 +167,50 @@ public class javaPatterns {
     public static void daimond2(int n){
 
         for(int i =1;i<=n;i++){
-            for(int j =1;j<=2*(i - 1);j++){
+            for(int j =1;j<=n-i;j++){
                 System.out.print(" ");
             }
-            for(int j = 1;j<=i;j++){
-                System.out.print(" *");
+            for(int j = 1;j<=(2*i) - 1;j++){
+                System.out.print("*");
             }
             System.out.println();
         }
          for(int i =n;i>=1;i--){
-            for(int j =1;j<=2*(i - 1);j++){
+            for(int j =1;j<=n-i;j++){
                 System.out.print(" ");
             }
-            for(int j = 1;j<=i;j++){
-                System.out.print(" *");
+            for(int j = 1;j<=(2*i) - 1;j++){
+                System.out.print("*");
             }
             System.out.println();
         }
 
     }
+
+    public static void sandGlass(){
+        int n = 5;
+         for(int i =n;i>=1;i--){
+            for(int j =1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for(int j = 1;j<=(2*i) - 1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        for(int i =2;i<=n;i++){
+            for(int j =1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for(int j = 1;j<=(2*i) - 1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    
  public static void main(String[] args) {
     // hollowRectangle(5,4);
     // invertHalfPyramid(9);
@@ -196,7 +221,8 @@ public class javaPatterns {
     // butterfly(9);
     // solid_rhombus(8);
     // hollow_rhombus(4, 5);
-    daimond(10);
+    // daimond2(10);
+    sandGlass();
 
         }
     }
