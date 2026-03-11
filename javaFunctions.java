@@ -119,5 +119,9 @@ public class javaFunctions {
     //binary to dec
     // binTodec(101);
     // decTobin(120);
+
+
+
+    sc.close();
   }
 }

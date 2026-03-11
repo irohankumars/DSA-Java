@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class JavaBasics {
@@ -356,7 +355,7 @@ public class JavaBasics {
 
        
         
-
+    sc.close();
         }
     }
 
