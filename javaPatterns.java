@@ -213,12 +213,47 @@ public class javaPatterns {
     public static void x(){
         int n = 5;
 
-      for(int i =1;i<=n;i++){
-        for(int j = 1; j<=n-i;j++){
-            System.out.print(" ");
+    //   for (int i = 0; i < n; i++) {
+    //             // Loop through columns
+    //             for (int j = 0; j < n; j++) {
+    //                 // Print '*' on both diagonals
+    //                 if (j == i || j == (n - 1 - i)) {
+    //                     System.out.print("*");
+    //                 } else {
+    //                     System.out.print(" ");
+    //                 }
+    //             }
+    //             System.out.println(); // Move to next row
+    //         }
+    
+for(int i = 0;i<n;i++){
+        for(int j = 0;j<n; j++){
+            if(j==i || j == n-1-i){
+                System.out.print("*");
+            }else{
+                System.out.print(" ");
+            }
+            
         }
-      }
+        System.out.println();
+     }
+}
+
+public static void hollowSquare(){
+    int row = 5;
+    int col = 7;
+
+    for(int i = 1; i<=row; i++){
+        for(int j=1; j<=col; j++){
+            if (i==1 || i == row|| j ==1||j==col) {
+                System.out.print("*");
+            }else{
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
     }
+}
 
  public static void main(String[] args) {
     // hollowRectangle(5,4);
@@ -232,7 +267,8 @@ public class javaPatterns {
     // hollow_rhombus(4, 5);
     // daimond2(10);
     // sandGlass();
-    x();
+    // x();
+    hollowSquare();
 
         }
     }
