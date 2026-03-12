@@ -268,7 +268,8 @@ public static void hollowSquare(){
     // daimond2(10);
     // sandGlass();
     // x();
-    hollowSquare();
+    // hollowSquare();
+    triangle01(4);
 
         }
     }

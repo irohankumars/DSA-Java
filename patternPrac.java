@@ -146,9 +146,58 @@ public class patternPrac {
         }
     }
 
+
+    public static void triangle2(){
+        int n = 4;
+        for(int i = 1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+         for(int i= n;i>=1;i--){
+            for(int j=2;j<=i;j++){
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+       
+    }
+
+    public static void floyd01(){
+        int n =4;
+
+        for(int i =1;i<=n;i++){
+            for(int j =1;j<=i;j++){
+                if((i+j) % 2 ==0){
+                    System.out.print(" 1");
+                }else{
+                    System.out.print(" 0");
+                }
+
+            }
+            System.out.println();
+        }
+    }
+
+    public static void hollow_rectangle(){
+        int row =10;
+        int col = 10;
+        for(int i =1;i<=row;i++){
+            for(int j =1;j<=col;j++){
+               if(i==1 || i==row || j==1 || j==col){
+                 System.out.print("*");
+               }else{
+                System.out.print(" ");
+               }
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
 
-        centeredTriangleInverted();
+        hollow_rectangle();
      
         
     }
