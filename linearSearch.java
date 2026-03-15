@@ -4,11 +4,9 @@ import java.util.Scanner;
 
 public class linearSearch {
     
-
-    public static void main(String[] args) {
+    public static void linearSearch(){
         Scanner sc = new Scanner(System.in);
-        
-        int arr[] = {1,2,3,4,5,6,78,88,99,10,12,22};
+          int arr[] = {1,2,3,4,5,6,78,88,99,10,12,22};
 
         for(int i =0; i<= arr.length - 1;i++){
             System.out.print( " "+arr[i]);
@@ -35,6 +33,26 @@ public class linearSearch {
         if(!found){
             System.out.println("The key does not exist in the array");
         }
+    }
+
+    public static void largestInArray(){
+        int arr[] = {1,2,3,4,5,6,78,88,99,10,12,22,101,222};
+        int largest = arr[0];
+        for(int i=0;i<arr.length; i++){
+                if(arr[i] >largest){
+                    largest =  arr[i];
+                } 
+        }
+        System.out.println(largest);
+
+
+    }
+
+    public static void main(String[] args) {
+        
+        // linearSearch();
+        largestInArray();
+      
     }
 
 }
