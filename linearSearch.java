@@ -1,4 +1,4 @@
-// import java.util.*;
+import java.util.*;
 
 import java.util.Scanner;
 
@@ -51,7 +51,7 @@ public class linearSearch {
     public static void main(String[] args) {
         
         // linearSearch();
-        largestInArray();
+        // largestInArray();
       
     }
 
