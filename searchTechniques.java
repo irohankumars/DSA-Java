@@ -84,13 +84,43 @@ public class searchTechniques {
         return -1;
     }
 
+    public static void reverseArray(){
+        // int arr[] = {11,22,33,44,55,88,99};
+        // int revArr[] = new int[arr.length];
+
+        // for(int i = 0; i < arr.length; i++){
+        //     revArr[i] = arr[arr.length - 1 - i];
+        // }
+
+        // System.out.println(Arrays.toString(arr));
+        // System.out.println(Arrays.toString(revArr));
+
+        //method -2 
+        int arr[] = {11,22,33,44,55,88,99};
+        int start = 0;
+        int end = arr.length -1;
+
+        while(start < end){
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+
+            start++;
+            end--;
+        }
+        
+        System.out.println(Arrays.toString(arr));
+
+    }
+
+
     public static void main(String[] args) {
         
         // linearSearch();
         // largestInArray();
-        int arr[] = {11,22,33,44,55,88,99};
-        int key = 88;
-        System.out.println("the index for key is: "+ BSt(arr,key));
+        // int arr[] = {11,22,33,44,55,88,99};
+        // int key = 88;
+        // System.out.println("the index for key is: "+ BSt(arr,key));
         
       
     }
