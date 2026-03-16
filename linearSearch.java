@@ -1,10 +1,10 @@
-import java.util.*;
+// import java.util.*;
 
 import java.util.Scanner;
 
 public class linearSearch {
     
-    public static void linearSearch(){
+    public static void linearSearchArray(){
         Scanner sc = new Scanner(System.in);
           int arr[] = {1,2,3,4,5,6,78,88,99,10,12,22};
 
@@ -33,6 +33,8 @@ public class linearSearch {
         if(!found){
             System.out.println("The key does not exist in the array");
         }
+
+        sc.close();
     }
 
     public static void largestInArray(){
