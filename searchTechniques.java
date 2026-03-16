@@ -113,6 +113,16 @@ public class searchTechniques {
 
     }
 
+    public static void pairsOfArray(){
+        int arr[] = {1,2,3,4,5,6,7};
+        for(int i=0;i<=arr.length-1;i++){
+            int currentElement = arr[i];
+            for(int j=i+1;j<= arr.length-1;j++){
+                System.out.print(" ("+ currentElement+","+arr[j]+") ");
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String[] args) {
         
@@ -121,7 +131,7 @@ public class searchTechniques {
         // int arr[] = {11,22,33,44,55,88,99};
         // int key = 88;
         // System.out.println("the index for key is: "+ BSt(arr,key));
-        
+        pairsOfArray();
       
     }
 
