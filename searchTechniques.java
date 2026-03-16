@@ -124,6 +124,26 @@ public class searchTechniques {
         }
     }
 
+    public static void subArray(){
+        int ts = 0;
+        int arr[] = {1,2,3,4,5,6,7,8};
+        for(int i=0 ; i<=arr.length-1;i++){
+            int start = i;
+            for(int j = i+1;j<= arr.length-1;j++){
+                int end = j;
+                for(int k=start;k<= end;k++){
+                    System.out.print(arr[k]);
+                }
+                ts++;
+                System.out.println();
+            }
+            System.out.println();
+        }
+        System.out.println("The Total subArray is "+ts);
+    }
+    
+
+    
     public static void main(String[] args) {
         
         // linearSearch();
@@ -131,8 +151,11 @@ public class searchTechniques {
         // int arr[] = {11,22,33,44,55,88,99};
         // int key = 88;
         // System.out.println("the index for key is: "+ BSt(arr,key));
-        pairsOfArray();
-      
+        // pairsOfArray();
+       subArray();
     }
 
 }
+
+
+
