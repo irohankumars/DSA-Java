@@ -150,7 +150,7 @@ public class searchTechniques {
         // int key = 88;
         // System.out.println("the index for key is: "+ BSt(arr,key));
         // pairsOfArray();
-       subArray();
+    //    subArray();
     }
 
 }
