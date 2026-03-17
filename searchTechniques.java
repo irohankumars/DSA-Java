@@ -128,10 +128,8 @@ public class searchTechniques {
         int ts = 0;
         int arr[] = {1,2,3,4,5,6,7,8};
         for(int i=0 ; i<=arr.length-1;i++){
-            int start = i;
             for(int j = i+1;j<= arr.length-1;j++){
-                int end = j;
-                for(int k=start;k<= end;k++){
+                for(int k=i;k<= j;k++){
                     System.out.print(arr[k]);
                 }
                 ts++;
