@@ -141,6 +141,20 @@ public class searchTechniques {
     }
     
 
+    public static void subarray2(){
+        int arr[] = {111,222,333,444};
+        for(int i =0;i<= arr.length-1; i++){
+            for(int j = i+1; j<= arr.length-1; j++){
+                for(int k = i; k<= j;k++){
+                    System.out.print(arr[k]+ " ");
+                }
+                System.out.println();
+            }
+        System.out.println();
+        }
+
+    }
+
     
     public static void main(String[] args) {
         
@@ -151,6 +165,7 @@ public class searchTechniques {
         // System.out.println("the index for key is: "+ BSt(arr,key));
         // pairsOfArray();
     //    subArray();
+    subarray2();
     }
 
 }
