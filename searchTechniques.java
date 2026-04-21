@@ -155,102 +155,26 @@ public class searchTechniques {
 
     }
 
-    public static void subarray23(){
-        int arr[] = {111,222,333,444};
-        for(int i =0;i<= arr.length-1; i++){
-            for(int j = i+1; j<= arr.length-1; j++){
-                for(int k = i; k<= j;k++){
-                    System.out.print(arr[k]+ " ");
+    public static void maxSumSubarry(){
+        int currSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+        int arr[] = {1,-2,3,5,6};
+        for(int i=0;i<=arr.length;i++){
+            int start = i;
+            for(int j=i+1;j< arr.length;j++){
+                int end = j;
+                currSum=0;
+                for(int k=start;k< end;k++){
+                    currSum += arr[k];
                 }
-                System.out.println();
-            }
-        System.out.println();
-        }
-
-    }
-
-     public static void subarray22(){
-        int arr[] = {111,222,333,444};
-        for(int i =0;i<= arr.length-1; i++){
-            for(int j = i+1; j<= arr.length-1; j++){
-                for(int k = i; k<= j;k++){
-                    System.out.print(arr[k]+ " ");
+                if(maxSum <currSum ){
+                    maxSum = currSum;
                 }
-                System.out.println();
             }
-        System.out.println();
         }
-
+        System.out.println("the max sum of sub array is: " + maxSum);
     }
-    public static void subarray3(){
-        int arr[] = {111,222,333,444};
-        for(int i =0;i<= arr.length-1; i++){
-            for(int j = i+1; j<= arr.length-1; j++){
-                for(int k = i; k<= j;k++){
-                    System.out.print(arr[k]+ " ");
-                }
-                System.out.println();
-            }
-        System.out.println();
-        }
-
-    }
-    
-     public static void subarray35(){
-        int arr[] = {111,222,333,444};
-        for(int i =0;i<= arr.length-1; i++){
-            for(int j = i+1; j<= arr.length-1; j++){
-                for(int k = i; k<= j;k++){
-                    System.out.print(arr[k]+ " ");
-                }
-                System.out.println();
-            }
-        System.out.println();
-        }
-
-    }
-
-    public static void subarray39(){
-        int arr[] = {111,222,333,444};
-        for(int i =0;i<= arr.length-1; i++){
-            for(int j = i+1; j<= arr.length-1; j++){
-                for(int k = i; k<= j;k++){
-                    System.out.print(arr[k]+ " ");
-                }
-                System.out.println();
-            }
-        System.out.println();
-        }
-
-    }
-
-    public static void subarray30(){
-        int arr[] = {111,222,333,444};
-        for(int i =0;i<= arr.length-1; i++){
-            for(int j = i+1; j<= arr.length-1; j++){
-                for(int k = i; k<= j;k++){
-                    System.out.print(arr[k]+ " ");
-                }
-                System.out.println();
-            }
-        System.out.println();
-        }
-
-    }
-
-     public static void subarray301(){
-        int arr[] = {111,222,333,444};
-        for(int i =0;i<= arr.length-1; i++){
-            for(int j = i+1; j<= arr.length-1; j++){
-                for(int k = i; k<= j;k++){
-                    System.out.print(arr[k]+ " ");
-                }
-                System.out.println();
-            }
-        System.out.println();
-        }
-
-    }
+   
     public static void main(String[] args) {
         
         // linearSearch();
@@ -260,7 +184,8 @@ public class searchTechniques {
         // System.out.println("the index for key is: "+ BSt(arr,key));
         // pairsOfArray();
     //    subArray();
-    subarray2();
+    // subarray2();
+    maxSumSubarry();
     }
 
 }
