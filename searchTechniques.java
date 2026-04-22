@@ -172,7 +172,7 @@ public class searchTechniques {
                 }
             }
         }
-        System.out.println(|"");
+        System.out.println("");
         System.out.println("the max sum of sub array is: " + maxSum);
     }
    
