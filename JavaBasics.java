@@ -1,0 +1,361 @@
+import java.util.*;
+
+public class JavaBasics {
+    //functions
+     public static void hello(){
+             System.out.println("helloworld");
+        }
+
+    public static void main(String args[]){
+
+        Scanner sc = new Scanner(System.in);
+        // average of 3 numbers
+        // float pen = 12.0f;
+        // float pencil = 112.0f;
+        // float paper = 120.0f;
+        // float Subtotal = pen + pencil  + paper;
+        // float tax = Subtotal * 0.18f;
+        // float Total = Subtotal + tax;
+        // System.out.println("Total cost with GST 18% is :: " + Total);
+        // operating on operators
+        // System.out.println(!(1>3));
+        // Assignment operators
+        // int A = 10;
+        // // System.out.println(A+=10);               
+        // // System.out.println(A+=10);
+        // System.out.println(A *= 10);
+        // System.out.println(A /= 10);
+
+        // int x, y, z;
+        // x = y = z = 2;
+        // x += y;
+        // y -= z;
+        // z /= (x + y);
+        // System.out.println(x + " " + y + " " + z);
+
+        // odd number
+        // System.out.println("Enter the Number: ");
+        // int Num = sc.nextInt();
+        // if(Num % 2 == 0){
+        //     System.out.println("The given number is even!");
+        // }else{
+        //     System.out.println("The given number is odd!");
+
+        // }
+
+        //Income
+            // System.out.println("Enter your Income in lac: ");
+            // int Income = sc.nextInt();
+
+            // if(Income <= 50000){
+            //     System.out.println("your tax is 0%" );
+            //     System.out.println("0% tax for the income less than 5 Lac");
+            // }else if(Income >= 50000 && Income <= 1000000){
+            //     double tax = Income * 0.2;
+            //     System.out.println("your tax is 20%= " + tax);
+            // }else{
+            //     double tax = Income * 0.3;
+            //     System.out.println("your tax is 30%= " + tax);
+
+            // }
+
+
+        // Switch
+            // int A[] = new int[2];
+            // System.out.println("Enter the numbers: ");
+            // for(int i=0;i<2;i++){
+            //     A[i] = sc.nextInt();
+            // }
+            // System.out.println("Enter the operation to be performed: ");
+            // char ch = sc.next().charAt(0);
+
+            // switch(ch){
+            //     case '+' : System.out.println("Calculated: " + (A[0] + A[1]));break;
+            //     case '*' : System.out.println("Calculated: " + (A[0] * A[1]));break;
+            //     case '%' : System.out.println("Calculated: " + (A[0] % A[1]));break;
+            //     case '/' : System.out.println("Calculated: " + (A[0] / A[1]));break;
+            //     case '-' : System.out.println("Calculated: " + (A[0] - A[1]));break;
+            //     default: System.out.println("Enter the valid operation");
+            // }
+
+        //loops
+            // for(double i=0; i<=1000000000; i++){
+            //     System.out.println("Hello, World!");
+            //     System.out.println("Hello!");
+
+            // }
+
+            // int num = 0;
+            // while(num <=100){
+            //     System.out.println("hello!");
+            //     num++;
+            // }
+
+            // do{
+            //     System.out.println("Hello!");
+            //     num++;
+            // }while(num<=99);
+
+            // System.out.println("Enter the Range of numbers you want sum of: ");
+            // int n = sc.nextInt();
+            // int sum =0;
+            // for ( int i = 0 ; i <=n; i++){
+            //      sum += i;
+            // }
+            //     System.out.println( sum );
+
+            // int i = 0;
+            // while(i<=10){
+            //     System.out.println(i);
+            //     i++;
+            // }
+            // do{
+            //     System.out.println(i);
+            //     i ++;
+            // }while(i<=30);
+             // System.out.println("Enter the Range of numbers you want sum of: ");
+            // int n = sc.nextInt();
+            // int sum =0;
+            // for ( int i = 0 ; i <=n; i++){
+            //      sum += i;
+            // }
+            //     System.out.println( sum );
+
+            // int i = 0;
+            // while(i<=10){
+            //     System.out.println(i);
+            //     i++;
+            // }
+            // do{
+            //     System.out.println(i);
+            //     i ++;
+            // }while(i<=30);
+
+
+            // System.out.println("Enter the Range of numbers you want sum of: ");
+            // int n = sc.nextInt();
+            // int sum =0;
+            // for ( int i = 0 ; i <=n; i++){
+            //      sum += i;
+            // }
+            //     System.out.println( sum );
+    
+        //   //local function
+        //     class hello{
+        //         void Recall(){
+        //             System.out.println("Hello23!");
+        //         }
+
+        //     }
+
+        //Printing Squares
+        //         for (int line = 1; line<=4 ; line++){
+        //                 for(int star = 1; star<=4; star++){
+        //                     System.out.print("*");
+        //                 }
+        //                 System.out.println();
+        //         }
+            
+        //     for (int line = 1; line <= 4; line++) {
+        //         for (int star = 1; star <= line; star++) {
+        //             System.out.print("*");
+        //         }
+        //     System.out.println(); // move to next line
+        // }
+    //print reverse of a numbers ----------- using string builder
+        // System.out.println("Enter the Number that needs to be printed in reverse: ");
+        // String num = sc.next();
+
+        // String reversed = new StringBuilder(num).reverse().toString();
+        // System.out.println(reversed);
+    //printing reverse of a number using arithmetic operators
+        // System.out.println("Enter the numbers: ");
+        // int num = sc.nextInt();
+        // int reverse = 0;
+        // while(num != 0){
+        //     int digit = num % 10;
+        //     num = num / 10;                    
+        //     reverse = reverse * 10 + digit;
+        // }
+        // System.out.println(reverse);
+        
+        // //optimized method 
+        // System.out.println("Enter the numbers: ");
+        // int num2 = sc.nextInt();
+        // while(num2 != 0){
+        //     int digit = num % 10;
+        //     System.out.print(digit + " ");
+        //     num2 /= 10; 
+
+
+
+        // System.out.println("Enter the numbers: ");
+        // int num2 = sc.nextInt();
+        // while(num2 != 0){
+        //     int digit = num % 10;
+        //     System.out.print(digit + " ");
+        //     num2 /= 10; 
+        // }
+        // System.out.println("Enter the numbers: ");
+        //             int num2 = sc.nextInt();
+        //             while(num2 != 0){
+        //                 int digit = num % 10;
+        //                 System.out.print(digit + " ");
+        //                 num2 /= 10; 
+        //             }
+        // System.out.println("Enter the numbers: ");
+                    // int num2 = sc.nextInt();
+                    // while(num2 != 0){
+                    //     int digit = num % 10;
+                    //     System.out.print(digit + " ");
+                    //     num2 /= 10; 
+                    // }
+        // System.out.println("Enter the numbers: ");
+        //             int num2 = sc.nextInt();
+        //             while(num2 != 0){
+        //                 int digit = num % 10;
+        //                 System.out.print(digit + " ");
+        //                 num2 /= 10; 
+        //             }
+
+    // keep entering numbers till users enter multiple of ten
+        // while(true){
+        //     System.out.println("Enter a number: ");
+        // int num4 = sc.nextInt();
+        //    if(num4 % 10 == 0){
+        //         System.out.println("divisible by 10");
+        //         continue;
+               
+        //     }        else{
+        //         System.out.println(num4);
+        //     }
+        // }
+
+    // check if the given number is prime or not
+        // System.out.println("Enter the Number to find out it is prime or not: ");
+        // int n = sc.nextInt();
+        // boolean isPrime = true;
+        // if(n==2){
+        //     System.out.println("n is prime");
+        // }else{
+        //     for(int i = 2; i<= Math.sqrt(n);i++){
+        //         if(n % i == 0){
+        //         isPrime = false;
+        //         break;
+        //         }
+                
+        //     }
+        //     if (isPrime) {
+        //         System.out.println("The given number is prime " + n);
+        //     } else {
+        //         System.out.println("The given number is not a Prime " + n);
+        //     }
+        // }
+    //taking multiple integers and returning two sums one of even's and other of odd's
+        //    int even = 0;
+        //    int odd = 0;
+
+        //    System.out.print("Enter the number of integers: ");
+        //    int n = sc.nextInt();
+
+        //    System.out.println("Enter the Integers: ");
+        //    for(int i = 0; i<n ; i++){
+        //     int num = sc.nextInt();
+
+        //     if(num % 2 ==0){
+        //         even += num;
+        //     }else{
+        //         odd += num;
+        //     }
+        //     }
+
+        //     System.out.println("Sum of Even "+ even);
+        //     System.out.println("Sum of odd "+ odd);
+
+
+    //Factorial of a number
+        // System.out.println("Enter the number you want to find factorial of ");
+        // int num = sc.nextInt();
+        // int fact = 1;
+
+        // for(int i = 1; i<= num; i++){
+        //     fact *= i;
+        // }
+
+        // System.out.println("Factorial of Num: " + fact);
+        
+    //multiplication table of number entered by user
+        // System.out.println("Enter the numer you want to print Multiplication tables: ");
+        // int n = sc.nextInt();
+
+        // for(int i=1; i<=10;i++){
+        //     int prod = i * n;
+        //     System.out.println(n + " * " + i + " = " + prod );
+        // }
+
+    //patterns
+        //star triangle
+        // for(int i = 0; i<=7; i++){
+        //     // System.out.println("");
+        //     for(int j = 0; j<=i;j++){
+        //         System.out.print("*");
+        //     }
+        //      System.out.println("");
+        // }
+        // //inverted star
+        //     int n= 7;
+        //     for(int i = 0; i<=n; i++){
+        //         for(int j=0; j<= n-i+1; j++){
+        //             System.out.print("*");
+        //         }
+        //         System.out.println();
+        //     }
+   //half pyramid
+        // System.out.print("enter the number: ");
+        // int n = sc.nextInt();
+        //     for(int i = 1; i<=n; i++){
+        //         // System.out.println("");
+        //         for(int j = 1; j<=i;j++){
+        //             System.out.print(j);
+        //         }
+        //         System.out.println("");
+        //     }
+    //character pattern
+        // char ch = 'A';
+        // for(int i =1;i<=6;i++){
+        //     for(int j=1; j<=i;j++){
+        //         System.out.print(ch);
+        //         ch++;
+        //     }
+        //     System.out.println();
+        // }
+        // System.out.println(ch);
+
+    //hollow pattern
+        // int rows = 4;
+        // int col = 5;
+
+        // for(int i=1; i<= rows; i++){
+        //     for(int j=1;j<=col ; j++){
+
+        //         if(i==1 || i == rows || j ==1 || j==col){
+        //             System.out.print("*");
+        //         }else{
+        //             System.out.print(" ");
+        //         }
+
+        //     }
+        //     System.out.println();
+        // }
+
+    //Functions
+    //    hello();
+    //    hello();
+    //    hello();
+
+       
+        
+    sc.close();
+        }
+    }
+
