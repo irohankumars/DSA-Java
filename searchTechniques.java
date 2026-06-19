@@ -197,7 +197,7 @@ public class searchTechniques {
         System.out.println("");
         System.out.println("the max sum of sub array is: " + maxSum);
     }
-   
+   //new
     public static void main(String[] args) {
         
         // linearSearch();
