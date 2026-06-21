@@ -45,7 +45,7 @@ import java.util.*;
 
 public class tripletIsZero {
 
-public static List<List<Integer>> threesum(int nums []){
+public static Set<List<Integer>> threesum(int nums []){
     
     int n = nums.length;
 
@@ -72,7 +72,8 @@ public static List<List<Integer>> threesum(int nums []){
             }
         }
     }
-    return new ArrayList<>(set);
+    // return new ArrayList<>(set);
+    return set;
 
 }
 
@@ -81,9 +82,9 @@ public static void main(String args[]){
 
     int nums[] = {-1, 0, 1, 2, -1, -4};
 
-    List<List<Integer>> result = threesum(nums);
-
-    System.out.println(result);
+    // List<List<Integer>> result = threesum(nums);
+    
+    System.out.println(threesum(nums));
 
 
 
